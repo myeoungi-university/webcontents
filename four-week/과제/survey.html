@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>설문지</title>
+  </head>
+  <body>
+    <header>
+      <h3>설문지</h3>
+      <p>소프트웨어 기술에 대한 의견을 듣습니다. 많은 참여 부탁드립니다.</p>
+      <hr />
+    </header>
+    <nav>
+      <form>
+        <label>
+          학년 :
+          <input type="radio" name="grade" value="1" />1학년
+          <input type="radio" name="grade" value="2" />2학년
+          <input type="radio" name="grade" value="3" />3학년
+          <input type="radio" name="grade" value="4" />4학년
+        </label>
+        <br />
+        <label>
+          성별 :
+          <input type="radio" name="gender" value="MAN" />남자
+          <input type="radio" name="gender" value="GIRL" />여자
+        </label>
+        <br />
+        <label for="interest">
+          관심분야 :
+          <input type="text" id="interest" />
+        </label>
+        <br />
+        <label>
+          진로 :
+          <input type="checkbox" name="future" value="1" /> 개발
+          <input type="checkbox" name="future" value="2" /> 기획
+          <input type="checkbox" name="future" value="3" /> 영업
+          <input type="checkbox" name="future" value="4" /> 창업
+        </label>
+        <br />
+        <label>
+          남기고 싶은 말<br />
+          <textarea cols="40" rows="10">글을 남겨 주세요.</textarea>
+        </label>
+      </form>
+    </nav>
+  </body>
+</html>

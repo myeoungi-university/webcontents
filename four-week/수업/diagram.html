@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>도형 서식 폼 만들기</h3>
+    <hr />
+    <form>
+      <fieldset>
+        <legend>도형 서식 입력</legend>
+        <label>
+          선종류
+          <select name="diagram">
+            <option value="1" selected>실선</option>
+            <option value="2">점선</option>
+          </select>
+        </label>
+        <br />
+        <br />
+        <label>
+          선두께 :
+          <input type="number" step="0.1" />
+        </label>
+        <label>
+          색선 :
+          <input
+            type="color"
+            value="#00BFFF"
+            onchange="document.body.style.color=this.value"
+          />
+        </label>
+        <br />
+        <br />
+        <label>
+          투명도 (0 ~ 100) :
+          <input type="range" min="0" max="100" list="tempe" />
+          <datalist id="tempe">
+            <option value="15" label="Low"></option>
+            <option value="50" label="Medium"></option>
+            <option value="85" label="High"></option>
+          </datalist>
+        </label>
+      </fieldset>
+    </form>
+  </body>
+</html>
