@@ -9,13 +9,14 @@ int main() {
     scanf("%d", &inputData);
 
     hour = inputData / 3600;
-    inputData = inputData % 3600;
+    inputData %= 3600;
 
     minute = inputData / 60;
-    inputData = inputData % 60;
+    inputData %= 60;
     
     second = inputData;
 
     printf("%d시 %d분 %d초 입니다.", hour, minute, second);
+    
     return 0;
 }
