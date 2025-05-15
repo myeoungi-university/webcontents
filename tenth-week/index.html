@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>if-else를 이용한 학점 메기기</h3>
+    <hr />
+    <script>
+      let grade;
+      let score = prompt("점수을 입력하세요", 100);
+      score = parseInt(score);
+
+      if (isNaN(score) || score > 100 || score < 0) {
+        document.write("잘못된 점수 입니다");
+      } else {
+        if (score >= 90) grade = "A";
+        else if (score >= 80) grade = "B";
+        else if (score >= 70) grade = "C";
+        else if (score >= 60) grade = "D";
+        else grade = "F";
+
+        document.write(score + "점은 " + grade + "학점입니다");
+      }
+    </script>
+  </body>
+</html>

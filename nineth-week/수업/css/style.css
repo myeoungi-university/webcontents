@@ -1,0 +1,25 @@
+h1 {
+  text-align: right;
+}
+
+span {
+  text-decoration: line-through;
+}
+
+.p1 {
+  text-indent: 3em;
+  text-align: justify;
+}
+
+.p2 {
+  text-indent: 1em;
+  text-align: center;
+}
+
+strong {
+  text-decoration: overline;
+}
+
+a {
+  text-decoration: none;
+}

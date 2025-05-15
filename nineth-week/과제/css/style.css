@@ -1,0 +1,64 @@
+h1 {
+  color: brown;
+  text-align: center;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+p {
+  font-size: 1em;
+  font-family: 휴먼편지체;
+  text-indent: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+#listId1 {
+  border-width: 1px;
+  border-style: dotted;
+}
+
+h3 {
+  text-shadow: 3px 3px turquoise;
+}
+
+.f1 {
+  background-color: orange;
+  border-radius: 15px;
+  border-style: inset;
+}
+
+.f1 a {
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+#content3 table {
+  border-collapse: collapse;
+}
+
+#contetn3 td,
+th {
+  text-align: left;
+  padding: 5px;
+  height: 15px;
+  width: 100px;
+}
+
+#content3 thead,
+tfoot {
+  background: darkgray;
+  color: yellow;
+}
+
+#content3 tbody tr:nth-child(even) {
+  background: aliceblue;
+}
+
+#content3 tbody > tr:hover {
+  background: pink;
+}
