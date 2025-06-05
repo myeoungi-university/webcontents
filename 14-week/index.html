@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>이미지에 마우스를 올리고 5초간 그대로 있을 때 사이트로 이동합니다</h3>
+    <hr />
+    <img
+      id="img"
+      src="../14-week/media/Naver 이미지.png"
+      onmouseover="startTimer(5000)"
+      onmousedown="cancelTimer()"
+    />
+    <script>
+      let timerId = null;
+      function startTimer(time) {
+        timerId = setTimeout(function () {
+          load("http://www.naver.com");
+        }, time);
+
+        document.getElementById("img").title = "타이머 동작 시작...";
+      }
+      
+      function cancelTimer() {
+        if (timerId != null) {
+          clearTimeout(timerId);
+        }
+      }
+
+      function load(url) {
+        window.location = url;
+      }
+    </script>
+  </body>
+</html>
